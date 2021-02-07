@@ -1,0 +1,79 @@
+%\NeedsTexFormat{LaTeX2e}
+\ProvidesPackage{UFPE}
+
+% Required Packages
+\RequirePackage[a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\RequirePackage{multirow}
+\RequirePackage{makecell}
+\RequirePackage{array}
+\RequirePackage{mathptmx}
+\RequirePackage{graphicx}
+\RequirePackage{tabularx}
+\RequirePackage{setspace}
+\RequirePackage[pagestyles, largestsep]{titlesec}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[portuguese]{babel}
+\RequirePackage{indentfirst}
+\RequirePackage{enumitem}
+\RequirePackage[labelsep=endash, font={small,bf}, skip=12pt]{caption}
+
+% Options
+
+% More declarations
+\setlist[enumerate]{label=\arabic*)}% Make enumerate default to 1)
+\pagenumbering{gobble}% Suppress page numbering
+ \setcounter{secnumdepth}{5}% Display enum up to \subparagraph (level 4)
+ \renewcommand*{\theparagraph}{\alph{paragraph}}
+\renewcommand{\thesubparagraph}{\textbullet}
+
+% Format titles on sections, subsection and paragraph
+\titleformat{\section}
+  {\normalfont\fontsize{14}{4}\selectfont\bfseries}{\thesection )}{10pt}{}
+ \titlespacing*{\section}
+   {0.13cm}{10pt}{0pt}
+\setlength{\parindent}{0.64cm}
+
+\titleformat{\subsection}
+{\normalfont\fontsize{13}{4}\selectfont\bfseries}{\thesubsection )}{15pt}{}
+  \titlespacing*{\subsection}
+    {0.63cm}{10pt}{0pt}
+
+\titleformat{\paragraph}[hang]
+{\normalfont\fontsize{13}{4}\selectfont\bfseries}{}{0pt}{\theparagraph .\hspace{10pt}}
+  \titlespacing*{\paragraph}
+  {1.90cm}{10pt}{0pt}
+
+\setstretch{1.5} % Multiplies linestretch by 1.5
+ \leftskip=0.74cm % Skip all normal text from left margin
+
+ % Define new class variables. They are used in document title
+\makeatletter
+\def\subject#1{\def\@subject{#1}}
+\def\chap#1{\def\@chap{#1}}
+\def\stand#1{\def\@stand{#1}}
+\def\class#1{\def\@class{#1}}
+\makeatother
+
+\renewcommand\theadset{\def\arraystretch{.85}}
+\makeatletter
+\renewcommand\maketitle{{
+\begin{table}[h!]
+\begin{tabularx}\hsize{|l|l|X|l|}
+  \hline
+  \multirowcell{6}{
+			\includegraphics[width=2cm]{logo-ufpe.png}
+  }
+  & \multicolumn{3}{c|}{
+    \thead{\textbf{\fontsize{22}{40}\selectfont Universidade Federal de Pernambuco}}} \\
+  & \multicolumn{3}{c|}{\thead{\textbf{\fontsize{16}{5}\selectfont Departamento de Engenharia Elétrica} \\ \textbf{\fontsize{16}{5}\selectfont Laboratório de Medidas Eletromagnéticas}}} \\ \cline{2-4}
+
+  & \multicolumn{3}{l|}{\thead{\textbf{Relatório de Práticas do Capítulo \@chap \, - \@title }}} \\ \cline{2-4}
+
+  & Aluno: & \@author & Turma: \@class \\ \cline{2-4}
+  & Bancada: & \@stand & Data: \@date \\
+  \hline
+ \end{tabularx}
+
+\end{table}
+}} % fim do maketitle
+\makeatother

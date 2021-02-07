@@ -1,0 +1,101 @@
+#+TITLE: Ufpe
+#+DATE: 06/02/21
+#+LATEX_CLASS_OPTIONS: [12pt]
+#+OPTIONS: toc:nil
+#+LATEX_HEADER: \usepackage{UFPE}
+#+LATEX_HEADER: \chap{3}
+#+LATEX_HEADER: \stand{01}
+#+LATEX_HEADER: \class{E4}
+
+
+
+* Objetivos Gerais
+
+Nesta parte, o aluno irá escrever os objetivos gerais do capítulo. Estes objetivos têm que ser comuns a todas as práticas presentes no capítulo. Caso algum capítulo só possua uma única prática, não há a necessidade de incluir esta seção.
+
+Outro parágrafo
+* Prática 1
+** Objetivos
+
+Nesta parte, o aluno irá escrever os objetivos específicos da prática, descrevendo que tipo de aprendizado espera adquirir.
+
+** Metodologia
+Nesta parte, o aluno irá escrever a metodologia utilizada para obter os resultados teóricos, simulados e experimentais da prática. Metodologia é a explicação das ações que foram desenvolvidas para se obter os resultados. Portanto, é nesta seção que são detalhados: a lista de materiais e equipamentos usados; a forma como foram ajustados os equipamentos; a forma como foram realizadas as medidas; e se foi necessário desenvolver um novo método/procedimento para obter algum resultado específico.
+
+\paragraph{Caracterização instrumental}
+Nessa parte, o aluno irá descrever os dados técnicos dos equipamentos utilizados no experimento. Deve conter dados como: fabricante, se é um equipamento analógico ou digital, classe de exatidão, potência, aplicação em CC ou CA, calibre, tensão de ensaio etc. Procurar os manuais dos fabricantes dos equipamentos quando necessário para obter essas informações.
+
+** Resultados
+Nesta parte, o aluno irá apresentar os resultados teóricos, simulados e experimentais obtidos na prática.
+No caso de resultados teóricos, só é necessário mostrar um resumo dos cálculos realizados e as respostas obtidas, com as equações centralizadas e organizadas. Não apresente somente as respostas sem nenhum desenvolvimento e tampouco detalhe demais as contas.
+
+No caso de resultados de simulação, acrescente sempre uma figura do MATLAB/Simulink contendo todo o circuito que foi montado na prática. Além disso, acrescente figuras contendo as formas de onda simuladas e os resultados numéricos da simulação (quando for o caso). Caso tenha sido feito algum cálculo teórico, devem-se comparar os resultados simulados com os teóricos, através de erros percentuais.
+
+No caso de resultados experimentais, acrescente figuras contendo as formas de onda do osciloscópio e tabelas com os resultados da medição com osciloscópio ou multímetro (quando for o caso). Se a prática contemplou teoria/simulação, devem-se comparar os resultados teóricos/simulados com os experimentais, através de erros percentuais.
+
+** Questionário
+Nesta seção o aluno deverá responder ao questionário que se encontra ao final de cada capítulo da apostila de práticas.
+
+** Conclusões
+
+Nesta parte, o aluno escreverá as conclusões desta prática, ressaltando se os resultados da teoria e simulação foram corretamente reproduzidos no experimento e se os erros estão dentro da margem de tolerância. Qualquer discrepância nos valores obtidos ou qualquer comportamento não esperado deve ser comentado e explicado nesta seção.
+
+* Prática 2
+$\cdots$
+
+#+begin_src latex
+\begin{center}
+  \textbf{\fontsize{14}{4}\selectfont Dicas importantes para elaboração de texto}
+  \\
+\end{center}
+#+end_src
+
+1) É imprescindível que o relatório não contenha erros de português. Portanto, use o corretor *ortográfico* quando terminar de escrever o relatório;
+
+2) Mantenha sempre o mesmo padrão em todo o relatório: use fonte Times New Roman tamanho 12 para toda a parte escrita; títulos e subtítulos em negrito com tamanhos 14 e 13, respectivamente; espaçamento entre linhas ajustado para 1,5; texto justificado; margens de 2 cm para cada borda; incluir tabulação nos parágrados; figuras, tabelas, equações e legendas centralizadas;
+
+3) Use a linguagem impessoal ao escrever um relatório, ou seja, use a terceira pessoa do singular. Evite ‘montei’, ‘usei’, ‘calculei’ ou ‘montamos’, ‘usamos’, ‘calculamos’. Use ‘foi montado’, ‘pode-se usar’, ‘calcula-se’;
+
+4) Use sempre o itálico para palavras que não sejam da língua portuguesa e para nomes de programas. Exemplos: protoboard, Scope, MATLAB, Simulink, SimPowerSystems;
+
+5) Percebe-se claramente, em alguns relatórios, que duas pessoas diferentes escreveram partes do relatório, ou seja, referenciam figuras de forma diferente, usam equações de forma diferente e até diferentes fontes e tamanhos. Evitem essas distorções nos relatórios. É imprescindível que uma só pessoa revise completamente o relatório antes de imprimi-lo;
+
+6) É válido consultar outras duplas para tirar dúvidas ou entender melhor as práticas. Porém, não copie partes dos relatórios das outras duplas. Nestes casos, ambas as duplas receberão nota zero nos seus relatórios;
+
+7) Usem o termo ‘calcular’ somente quando estiverem aplicando valores a uma equação ou fórmula. Por exemplo, quando forem realizar um cálculo teórico ou quando forem calcular erros. Nas práticas, usem os termos ‘medir’ e ‘obter’. Termos coloquiais, como ‘setar’, não existem em português, logo, usem termos técnicos, como ‘ajustar’;
+
+8) Usem corretamente as escalas das grandezas elétricas: pico (p), nano (n), micro ($\mu$), mili (m), kilo (k), mega (M) e giga (G). Nunca representem as variáveis na notação científica nem com 103, 10-3, 10-6 ou equivalente. Quando uma variável só possui parte fracionária (parte inteira igual a zero), converta a variável para uma escala menor, até que a parte inteira seja diferente de zero. Por exemplo, se uma corrente medida for igual a $0,030mA$, converta para $30\mu A$ (nunca use 30*10-6 ou 30E-6). Se uma resistência medida for igual a $0,987k \Omega $, converta para $987 \Omega$. Da mesma forma, se a parte inteira de uma variável for maior que 1000, converta a variável para uma escala maior. Por exemplo, se uma tensão medida for igual a 1030mV, converta para 1,03V. Se uma corrente for igual a $1570\mu A$, converta para $1,57mA$ (nunca use 1,57*10-3 ou 1,57E-3);
+
+9) Após converter a escala de uma variável para que a parte inteira seja maior que zero e menor que 1000, lembre-se sempre de representar as variáveis com até 2 (duas) casas decimais. Por exemplo, se uma tensão calculada for igual a 3158,74mV, converta para 3,15874V e depois represente com somente duas casas decimais, ou seja, 3,16V. Use arredondamento quando necessário. Caso um valor em por cento (\%) for muito pequeno, represente até a casa decimal do primeiro dígito significativo (converta 0,000258\% para 0,0002\%). Caso um valor em por cento (\%) for muito grande (maior que 1000), represente-o somente com a parte inteira (converta 1058,37\% para 1058\%);
+
+10) Use sempre vírgula para separar a parte fracionária da inteira em números, nunca ponto;
+
+11) Ao incluir tabelas no relatório, lembre-se de sempre colocar uma legenda acima da tabela contendo o número ordenado começando de 1 e com uma breve descrição do seu conteúdo. A tabela deve estar centralizada na página, juntamente com sua legenda, e deve ser obrigatoriamente citada no texto com o seu devido número. Exemplo de citação: Os valores de tensão e de corrente para os referidos resistores podem ser encontrados na Tabela 1. Tabelas são elementos flutuantes, ou seja, não precisam estar logo abaixo do texto em que são citados pela primeira vez. Elas podem estar em páginas posteriores do texto, sempre após sua primeira citação. Cuidado para manter a ordem das tabelas no texto e não colocá-las para o final do relatório;
+    #+tblname: valores
+    #+caption: Valores de tensão e corrente para diferentes cargas $R_c$.
+    #+ATTR_LATEX: :align |c|c|c|
+    |-------+------------+------------|
+    | $R_c$ | Tensão     | Corrente   |
+    |-------+------------+------------|
+    | $1 \Omega$ | $57,50 mV$ | $53,30 mA$ |
+    |-------+------------+------------|
+    | $2 \Omega$ | $112 mV$   | $52,33 mA$ |
+    |-------+------------+------------|
+
+12) [@12] Ao incluir figuras no relatório, lembre-se de sempre colocar uma legenda acima da figura contendo o número ordenado começando de 1 e com uma breve descrição do seu conteúdo. A figura deve estar centralizada na página, juntamente com sua legenda, e deve ser obrigatoriamente citada no texto com o seu devido número. Exemplo de citação: A visualização da resistência equivalente do circuito ser vista na Figura 1. Figuras são elementos flutuantes, ou seja, não precisam estar logo abaixo do texto em que são citados pela primeira vez. Elas podem estar em páginas posteriores do texto, sempre após sua primeira citação. Cuidado para manter a ordem das figuras no texto e não colocá-las para o final do relatório;
+#+NAME: fig:resistência_equivalente
+#+CAPTION: Visualização da resistência equivalente nos terminais A e B do circuito simulado.
+#+ATTR_LATEX: :width 400px
+[[./resistência_equivalente.png]]
+
+
+13) [@13] Ao descrever qualquer circuito de uma determinada prática, lembre-se sempre de incluir uma figura contendo o circuito, ou seja, faça um print screen na figura da apostila e coloque-a no relatório. Não cite figuras da apostila sem adicioná-las no relatório;
+
+14) Ao incluir uma figura no relatório, recorte somente a parte de interesse e aumente a figura de forma a ficarem visível os valores medidos ou observados e as formas de onda (use a Figura 1 como exemplo). Não acrescente figuras mostrando toda a área de trabalho ou mostrando outras janelas que não interessam;
+
+15) Ao incluir equações no relatório, lembre-se de sempre usar o ambiente Equação disponibilizado pelo Microsoft Word ou por programas similares, mantendo as equações centralizadas no texto. Nunca escreva as equações em linha no texto, como: Erro (%) = 100*|valor teórico – valor medido|/(valor teórico). Diferente das figuras e tabelas, as equação NÃO são elementos flutuantes, ou seja, elas fazem parte da sequência de leitura do texto de devem vir sempre abaixo do texto, seguida de dois pontos. Exemplo: Para o cálculo do erro, foi usada a equação:
+\begin{equation*}
+Erro \(\%\)= 100 \cdot \frac{\left|\text{Valor Teórico} - \text{Valor Medido}\right|}{\text{Valor Teórico}}
+\end{equation*}
+
+16) [@16]Caso o relatório seja feito em um computador e impresso em outro (como, por exemplo, feito em casa e impresso na gráfica ou feito em casa e impresso por um amigo), não se esqueça de salvá-lo no formato PDF antes de levá-lo para impressão. Versões distintas editores de texto são responsáveis por bagunçar a formatação do texto, prejudicando o aluno. Lembre-se, também, de comparar o arquivo em PDF com o arquivo original para ter certeza que a conversão foi adequada.
