@@ -6,6 +6,7 @@
 #+LATEX_HEADER: \chap{3}
 #+LATEX_HEADER: \stand{01}
 #+LATEX_HEADER: \class{E4}
+#+LATEX_HEADER: \subject{Laboratório de Medidas Eletromagnéticas}
 
 
 
