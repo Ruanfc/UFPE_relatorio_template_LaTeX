@@ -17,7 +17,9 @@
     "babel"
     "indentfirst"
     "enumitem"
-    "caption")
+    "caption"
+    "listings"
+    "xcolor")
    (TeX-add-symbols
     "subject"
     "chap"
