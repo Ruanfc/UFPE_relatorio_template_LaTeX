@@ -3,6 +3,9 @@
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("geometry" "a4paper" "top=2cm" "bottom=2cm" "left=2cm" "right=2cm") ("titlesec" "pagestyles" "largestsep") ("inputenc" "utf8") ("babel" "portuguese") ("caption" "labelsep=endash" "font={small,bf}" "skip=12pt")))
+   (add-to-list 'LaTeX-verbatim-environments-local "lstlisting")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "lstinline")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "lstinline")
    (TeX-run-style-hooks
     "geometry"
     "multirow"
@@ -25,6 +28,13 @@
     "chap"
     "stand"
     "class"
-    "arraystretch"))
+    "arraystretch")
+   (LaTeX-add-listings-lstdefinestyles
+    "mystyle")
+   (LaTeX-add-xcolor-definecolors
+    "codegreen"
+    "codegray"
+    "codepurple"
+    "backcolour"))
  :latex)
 

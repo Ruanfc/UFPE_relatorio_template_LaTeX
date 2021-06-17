@@ -1,13 +1,11 @@
 #+TITLE: Ufpe
-#+DATE: 06/02/21
+#+DATE: 16/06/21
 #+LATEX_CLASS_OPTIONS: [12pt]
 #+OPTIONS: toc:nil
 #+LATEX_HEADER: \usepackage{UFPE}
 #+LATEX_HEADER: \chap{3}
-#+LATEX_HEADER: \stand{01}
 #+LATEX_HEADER: \class{E4}
-#+LATEX_HEADER: \subject{Laboratório de Medidas Eletromagnéticas}
-
+#+LATEX_HEADER: \subject{Laboratório de Máquinas Elétricas}
 
 
 * Objetivos Gerais
